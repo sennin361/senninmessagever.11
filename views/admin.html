@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>仙人チャット - 管理画面</title>
+  <link rel="stylesheet" href="/style.css" />
+</head>
+<body>
+  <div class="admin-container">
+    <h1>仙人チャット 管理画面</h1>
+
+    <p id="userCount">現在の接続ユーザー数: -</p>
+
+    <div class="admin-section">
+      <label for="adminMessage">送信メッセージ:</label>
+      <input type="text" id="adminMessage" placeholder="管理者からのメッセージ" />
+      <button id="sendAllBtn">全体に送信</button>
+    </div>
+
+    <div class="admin-section">
+      <label for="targetRoom">対象ルーム:</label>
+      <input type="text" id="targetRoom" placeholder="ルーム名を入力" />
+      <button id="sendRoomBtn">ルームに送信</button>
+    </div>
+
+    <div class="admin-section">
+      <label for="banUserId">BANするユーザーID:</label>
+      <input type="text" id="banUserId" placeholder="ユーザーIDを入力" />
+      <button id="banUserBtn">BAN</button>
+    </div>
+
+    <div class="admin-section">
+      <button id="resetServerBtn">サーバーリセット</button>
+    </div>
+
+    <div class="admin-section">
+      <button id="toggleMaintenanceBtn">メンテナンスモード切り替え</button>
+      <p>メンテナンス状態: <span id="maintenanceStatus">オフ</span></p>
+    </div>
+
+    <div class="admin-section">
+      <button id="refreshKeywordsBtn">あいことば更新</button>
+      <h3>チャット中のあいことば一覧:</h3>
+      <ul id="keywordList"></ul>
+    </div>
+  </div>
+
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="/admin.js"></script>
+</body>
+</html>
