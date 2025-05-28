@@ -1,0 +1,75 @@
+body {
+  font-family: "Arial", sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f0f2f5;
+  color: #333;
+}
+
+.admin-container {
+  max-width: 600px;
+  margin: 40px auto;
+  padding: 20px 30px;
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  text-align: center;
+  font-size: 24px;
+  margin-bottom: 30px;
+  color: #2c3e50;
+}
+
+h2 {
+  font-size: 18px;
+  margin-top: 30px;
+  margin-bottom: 10px;
+  color: #34495e;
+}
+
+input[type="text"],
+input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-sizing: border-box;
+}
+
+button {
+  display: inline-block;
+  padding: 10px 16px;
+  margin-bottom: 15px;
+  font-size: 14px;
+  color: #fff;
+  background-color: #3498db;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #2980b9;
+}
+
+#error,
+.error {
+  color: red;
+  font-size: 12px;
+  margin-bottom: 10px;
+}
+
+ul#keywordList {
+  list-style-type: disc;
+  padding-left: 20px;
+}
+
+ul#keywordList li {
+  margin-bottom: 4px;
+  font-size: 14px;
+}
