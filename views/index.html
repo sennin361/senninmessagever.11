@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#4caf50" />
+  <link rel="manifest" href="/manifest.json" />
+  <link rel="stylesheet" href="/style.css" />
+  <link rel="icon" href="/favicon.ico" />
+  <title>仙人チャット</title>
+</head>
+<body>
+  <div class="container">
+    <div class="sidebar">
+      <h2>ホーム</h2>
+      <input type="text" id="roomInput" placeholder="あいことばを入力" />
+      <button id="joinRoomBtn">入室</button>
+      <button id="leaveRoomBtn">退室</button>
+      <div id="userList">接続中ユーザー: 0</div>
+    </div>
+
+    <div class="chat-section">
+      <div class="chat-messages" id="chatMessages"></div>
+      <form class="input-section" id="messageForm">
+        <input type="text" id="messageInput" placeholder="メッセージを入力" autocomplete="off" />
+        <button type="submit">送信</button>
+      </form>
+    </div>
+  </div>
+
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="/main.js"></script>
+  <script src="/pwa.js"></script>
+</body>
+</html>
